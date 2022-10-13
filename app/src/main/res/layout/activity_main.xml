@@ -7,60 +7,64 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linear"
         android:orientation="horizontal">
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
             android:id="@+id/k1"
-            android:src="@drawable/kocka1"/>
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
+            android:src="@drawable/kocka1" />
+
+        <ImageView
             android:id="@+id/k2"
-            android:src="@drawable/kocka2"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/kocka2" />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linear2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear"
-        android:orientation="vertical"
-        android:id="@+id/linear2">
+        android:orientation="vertical">
+
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/oneDice"
-            android:text="1 kocka"
-            />
-        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="1 kocka" />
+
+        <Button
             android:id="@+id/twoDice"
-            android:text="2 kocka"
-            />
-        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/throwDice"
-            android:text="Dobás"
-            />
+            android:text="2 kocka" />
+
         <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/reset"
-        android:text="Reset"
-        />
+            android:id="@+id/throwDice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dobás" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
     </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test"
         android:layout_below="@+id/linear2"
-        android:textSize="28dp"/>
+        android:text="Test"
+        android:textSize="28dp" />
 
 
 </RelativeLayout>
