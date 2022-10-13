@@ -64,7 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear2"
         android:text="Test"
-        android:textSize="28dp" />
+        android:textSize="28dp"
+        android:id="@+id/log"/>
 
 
 </RelativeLayout>
