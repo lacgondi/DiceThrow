@@ -61,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
                 if(isTwoDice){
                     setDiceValue(diceOneValue, dice1);
                     setDiceValue(diceTwoValue, dice2);
+                    log.append(diceOneValue+diceTwoValue+" ("+diceOneValue+"+"+diceTwoValue+")\n");
                 }else{
                     setDiceValue(diceOneValue, dice1);
+                    log.append(diceOneValue+"\n");
                 }
             }
         });
@@ -120,7 +122,10 @@ public class MainActivity extends AppCompatActivity {
         throwDice = findViewById(R.id.throwDice);
         reset = findViewById(R.id.reset);
         log = findViewById(R.id.log);
+
         dice1.setImageResource(R.drawable.kocka1);
+        dice2.setImageResource(R.drawable.kocka1);
+        log.setText("");
 
         //1 dice in the middle by default
         setOneDice();
