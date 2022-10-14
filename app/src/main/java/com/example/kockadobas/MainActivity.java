@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 0f
         ));
-        dice2.setVisibility(View.INVISIBLE);
+        dice2.setVisibility(View.GONE);
     }
 
     private void init() {
