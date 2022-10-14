@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setOneDice();
-                isTwoDice=false;
+                isTwoDice = false;
             }
         });
         twoDice.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 ));
                 dice2.setImageResource(R.drawable.kocka1);
                 dice2.setVisibility(View.VISIBLE);
-                isTwoDice=true;
+                isTwoDice = true;
             }
         });
         throwDice.setOnClickListener(new View.OnClickListener() {
@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 diceOneValue = (int) (Math.random() * 6) + 1;
                 diceTwoValue = (int) (Math.random() * 6) + 1;
-                if(isTwoDice){
+                if (isTwoDice) {
                     setDiceValue(diceOneValue, dice1);
                     setDiceValue(diceTwoValue, dice2);
-                    log.append(diceOneValue+diceTwoValue+" ("+diceOneValue+"+"+diceTwoValue+")\n");
-                }else{
+                    log.append(diceOneValue + diceTwoValue + " (" + diceOneValue + "+" + diceTwoValue + ")\n");
+                } else {
                     setDiceValue(diceOneValue, dice1);
-                    log.append(diceOneValue+"\n");
+                    log.append(diceOneValue + "\n");
                 }
             }
         });
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
         //1 dice in the middle by default
         setOneDice();
-        isTwoDice=false;
+        isTwoDice = false;
 
         diceOneValue = 0;
         diceTwoValue = 0;
